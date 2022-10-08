@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/drawable/boder_btn.xml" value="0.125" />
+        <entry key="..\:/android_122/Tonghop_117/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1425" />
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/drawable/roud_boder.xml" value="0.125" />
+        <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/activity_bottom_navigation_bar.xml" value="0.21014492753623187" />
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/activity_chuyentrang.xml" value="0.22826086956521738" />
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/activity_list_view.xml" value="0.22826086956521738" />
@@ -13,6 +15,7 @@
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/activity_profile.xml" value="0.22826086956521738" />
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/activity_sign_up.xml" value="0.22826086956521738" />
         <entry key="..\:/android_122/Tonghop_117/app/src/main/res/layout/layout_listview.xml" value="0.22826086956521738" />
+        <entry key="..\:/android_122/Tonghop_117/app/src/main/res/menu/menu_buttom_nav.xml" value="0.25" />
       </map>
     </option>
   </component>

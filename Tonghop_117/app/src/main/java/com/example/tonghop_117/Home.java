@@ -1,15 +1,21 @@
 package com.example.tonghop_117;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
     Button btnPro,btnlgout,btnList;
-
+    private BottomNavigationView btnnav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +43,34 @@ public class Home extends AppCompatActivity {
                 doOpenListViewActivity();
             }
         });
+        btnnav = (BottomNavigationView) findViewById(R.id.button_navi);
+        //vpger = (ViewPager)findViewById(R.id.view_pager);
+
+        btnnav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.action_home:
+                        doOpenHomeActivity();
+                        Toast.makeText(Home.this, "Home", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_profile:
+                        doOpenProfileActivity();
+                        Toast.makeText(Home.this, "Profile", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_list:
+                        doOpenListViewActivity();
+                        Toast.makeText(Home.this, "List", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
+    }
+    public void doOpenHomeActivity()
+    {
+        Intent myIntent=new Intent(this, Home.class);
+        startActivity(myIntent);
     }
     public void doOpenProfileActivity()
     {
