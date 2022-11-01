@@ -36,11 +36,13 @@ public class sinhvienDao {
         String sql = "SELECT * FROM sinhvien";
         return get(sql);
     }
+    //truyen vao id cua sinh vien
     public sinhvien getById(String id){
         String sql = "SELECT * FROM sinhvien WHERE id =?";
-        List<sinhvien> list = get(sql,id);
+        List<sinhvien> list = get(sql,id);//gọi danh sach
         return list.get(0);
     }
+    //them sinh vien đc truyen vao
     public long insert(sinhvien sv){
         ContentValues values = new ContentValues();
         values.put("id",sv.getId());
@@ -57,6 +59,7 @@ public class sinhvienDao {
         return db.update("sinhvien",values,"id=?",new String[]{sv.getId()});
     }
     public int delete(String id){
+
         return  db.delete("sinhvien","id=?",new String[]{id});
     }
 }

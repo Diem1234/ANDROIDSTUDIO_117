@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android_122/Sqlite_117/app/src/main/res/layout/activity_add_or_edit.xml" value="0.1" />
         <entry key="..\:/android_122/Sqlite_117/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/android_122/Sqlite_117/app/src/main/res/layout/layout_sinhvien_item.xml" value="0.264" />
       </map>
     </option>
   </component>
