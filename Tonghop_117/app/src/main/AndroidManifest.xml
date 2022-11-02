@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Tonghop_117"
         tools:targetApi="31">
         <activity
+            android:name=".AddOrEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListviewSinhvien"
+            android:exported="false" />
+        <activity
             android:name=".BottomNavigationBar"
             android:exported="false" />
         <activity

@@ -55,7 +55,7 @@ public class BottomNavigationBar extends AppCompatActivity {
     }
     public void doOpenListViewActivity()
     {
-        Intent myIntent=new Intent(this, listView.class);
+        Intent myIntent=new Intent(this, ListviewSinhvien.class);
         startActivity(myIntent);
     }
 }

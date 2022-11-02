@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     Button btnsignin, btnsignup;
     EditText txtName,txtPw;
+    BDHelper  DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,16 +21,24 @@ public class MainActivity extends AppCompatActivity {
         btnsignup = (Button) findViewById(R.id.btnsinup1);
         txtName = (EditText) findViewById(R.id.editTextName);
         txtPw = (EditText) findViewById(R.id.editTextPass);
+        DB = new BDHelper(this);
         btnsignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (txtName.getText().length() !=0 && txtPw.getText().length() !=0){
-                    if (txtName.getText().toString().equals("Diem") && txtPw.getText().toString().equals("1234")){
-                        doOpenNavActivity();
-                        Toast.makeText(MainActivity.this, "Ban dang nhap thanh cong!", Toast.LENGTH_SHORT).show();
+                String user = txtName.getText().toString();
+                String pass = txtPw.getText().toString();
+
+                if(user.equals("")||pass.equals(""))
+                    Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                else{
+                    Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+                    if(checkuserpass==true){
+                        Toast.makeText(MainActivity.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
+                        Intent intent  = new Intent(getApplicationContext(), BottomNavigationBar.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(MainActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
-                }else {
-                    Toast.makeText(MainActivity.this, "Nhap ten hoac mat khau cua ban!", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -40,7 +40,7 @@ public class Home extends AppCompatActivity {
         btnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doOpenListViewActivity();
+                doOpenListView1Activity();
             }
         });
         btnnav = (BottomNavigationView) findViewById(R.id.button_navi);
@@ -82,9 +82,14 @@ public class Home extends AppCompatActivity {
         Intent myIntent=new Intent(this, MainActivity.class);
         startActivity(myIntent);
     }
-    public void doOpenListViewActivity()
+    public void doOpenListView1Activity()
     {
         Intent myIntent=new Intent(this, listView.class);
+        startActivity(myIntent);
+    }
+    public void doOpenListViewActivity()
+    {
+        Intent myIntent=new Intent(this, ListviewSinhvien.class);
         startActivity(myIntent);
     }
 }
