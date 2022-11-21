@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Điểm :" />
+            android:text="Chỉ số :" />
 
         <EditText
             android:id="@+id/edtSvDiem"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:ems="10"
-            android:hint="Điểm"
+            android:hint="Chỉ số"
             android:inputType="number" />
 
         <LinearLayout

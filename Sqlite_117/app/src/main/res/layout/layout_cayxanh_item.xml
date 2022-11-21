@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        android:textColor="#FDFCFC"
+        android:textColorHint="#FDFBFB" />
+    <TextView
+        android:id="@+id/tvNametg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        android:textColor="#FDFCFC"
+        android:textColorHint="#FDFBFB" />
+    <TextView
+        android:id="@+id/tvdacta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        android:textColor="#FDFCFC"
+        android:textColorHint="#FDFBFB" />
+    <TextView
+        android:id="@+id/tvmaula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        android:textColor="#FDFCFC"
+        android:textColorHint="#FDFBFB" />
+
+    <TextView
+        android:id="@+id/tvChiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="Điểm số :"
+        android:textColor="#FBF9F9"
+        android:textColorHint="#F4F1F1" />
+</LinearLayout>
